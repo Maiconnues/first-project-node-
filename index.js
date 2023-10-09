@@ -19,20 +19,6 @@ const port = 3000
 const app = express()
 app.use(express.json())
 
-
-
-
-/*const myFilrstMiddleware = (request, response, next) => {
-
-    console.log('fui chamado')
-
-    next()
-
-    console.log('finalizamos')
-}
-
-app.use(myFilrstMiddleware)*/
-
 const users = []
 
 const checkUserId = (request, response, next) => {
