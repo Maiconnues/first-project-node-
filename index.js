@@ -50,7 +50,7 @@ app.post('/users', (request, response) => {
 try {
     const { name, age } = request.body
 
-    if( age < 18) throw new Error("permitido somente maiores de 18 anos")
+    if( age < 18) throw new Error('permitido somente maiores de 18 anos')
 
     const user = { id: uuid.v4(), name, age }
 
